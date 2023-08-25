@@ -1,18 +1,32 @@
 \documentclass[12pt,a4paper,titlepage]{article}
+\usepackage[utf8]{inputenc}
 
+
+\usepackage[top=25mm, bottom=25mm, left=35mm, right=25mm]{geometry} % définit les marges
+
+\usepackage{mathtools}
+\usepackage[english,main=french]{babel}
+\usepackage{libertine}
+\usepackage{blindtext}
+\usepackage[pdftex]{graphicx}
+\usepackage{lmodern}
+\usepackage{url}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+\newcommand{\hsp}{\hspace{20pt}}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\title{BIOSTOCKAGE} % le titre de l'article
+\usepackage{natbib}
+\usepackage[pdftex,urlcolor=black,colorlinks=true,linkcolor=black,citecolor=black]{hyperref}
+\author{Groupe 06} 
+\usepackage[english,main=french]{babel}
+\usepackage[]{tocbibind}
+\usepackage{newcent}
+\usepackage{pdfpages}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[francais]{babel}
-\usepackage{datetime}  
 
 
-\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
-
-% Useful packages
-\usepackage{amsmath}
-\usepackage{graphicx}
-\usepackage{quotchap}
-\usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
 \title{Architecture des Systèmes d'Information {}}
 \author{Aïssatou SOW\\
@@ -23,13 +37,8 @@
    \texttt{aïssatou.sow@ulb.be}}
 \date{\today}
 
-\maketitle
 
 \begin{document}
-\maketitle
-
-\clearpage
-\vspace*{\fill}
 \begin{center}
 \begin{minipage}{.6\textwidth}
 \begin{center}
@@ -38,19 +47,16 @@
 \end{minipage}
 \end{center}
 \vfill % equivalent to \vspace{\fill}
-\clearpage
 
+\newpage
 \tableofcontents
 
 
 \newpage
 
-\section{Introduction}
-De nos jours marqués par l’innovation de la technologie l’utilisation des réseaux sociaux numériques prend une place très importante aux sein de notre vie, si la plupart des personnes l’utilisent pour diverses raisons ils semblent avoir un grand effet sur l’apprentissage dans le milieu scolaire à travers cette grande variété d’outils et d’assistance .Les réseaux sociaux numériques ont profondément transformé la façon dont nous communiquons, interagissons et partageons des informations bien qu'ils soient souvent associés à des activités de socialisation, les réseaux sociaux peuvent également être utilisés comme des outils puissants d'apprentissage, offrant de nouvelles opportunités d'exploration, de collaboration et de développement professionnel pour les étudiants. Dans cette ère numérique, les réseaux sociaux ont le potentiel de compléter les méthodes d'enseignements traditionnelles en fournissant un accès facile à une multitude de ressources éducatives, en favorisant l'interaction entre les apprenants et en élargissant les horizons de l'apprentissage au-delà des murs de la salle de classe. Cependant,  il est également important de reconnaître les défis et les inconvénients associés à l'utilisation des réseaux sociaux en tant qu'outils d'apprentissage, tels que la distraction, la fiabilité des informations et les problèmes de confidentialité. En comprenant à la fois les avantages et les inconvénients, nous pouvons explorer comment maximiser les bénéfices des réseaux sociaux tout en atténuant les risques potentiels.\newline
-
-Le développement des réseaux sociaux numériques a ouvert de nouvelles perspectives en matière d'apprentissage pour les étudiants. Voici un point clé à considérer dans le développement de cette idée : \newline
-
-Les réseaux sociaux numériques peuvent-ils être efficacement utilisés comme outils d' apprentissage pour les étudiants? \newline
+\section*{Introduction}
+De nos jours marqués par l’innovation de la technologie l’utilisation des réseaux sociaux numériques prend une place très importante aux sein de notre vie, si la plupart des personnes l’utilisent pour diverses raisons ils semblent avoir un grand effet sur l’apprentissage dans le milieu scolaire à travers cette grande variété d’outils et d’assistance .Les réseaux sociaux numériques ont profondément transformé la façon dont nous communiquons, interagissons et partageons des informations bien qu'ils soient souvent associés à des activités de socialisation, les réseaux sociaux peuvent également être utilisés comme des outils puissants d'apprentissage, offrant de nouvelles opportunités d'exploration, de collaboration et de développement professionnel pour les étudiants. Dans cette ère numérique, les réseaux sociaux ont le potentiel de compléter les méthodes d'enseignements traditionnelles en fournissant un accès facile à une multitude de ressources éducatives, en favorisant l'interaction entre les apprenants et en élargissant les horizons de l'apprentissage au-delà des murs de la salle de classe. Cependant,  il est également important de reconnaître les défis et les inconvénients associés à l'utilisation des réseaux sociaux en tant qu'outils d'apprentissage, tels que la distraction, la fiabilité des informations et les problèmes de confidentialité. En comprenant à la fois les avantages et les inconvénients, nous pouvons explorer comment maximiser les bénéfices des réseaux sociaux tout en atténuant les risques potentiels. Le développement des réseaux sociaux numériques a ouvert de nouvelles perspectives en matière d'apprentissage pour les étudiants. Voici un point clé à considérer dans le développement de cette idée : 
+Les réseaux sociaux numériques peuvent-ils être efficacement utilisés comme outils d' apprentissage pour les étudiants? 
 
 \section{Objectif de ma recherche }
 L'objectif de ma recherche est d'explorer l'utilisation des réseaux sociaux numériques en tant qu'outils d'apprentissage pour les étudiants. je cherches à examiner comment les réseaux sociaux peuvent être efficacement intégrés dans le contexte éducatif afin de soutenir l'apprentissage, l'engagement et les résultats académiques des étudiants. L'objectif global est de fournir des connaissances et des recommandations pour développer des approches pédagogiques plus efficaces, sécurisées et enrichissantes qui exploitent le potentiel des réseaux sociaux numériques en tant qu'outils d'apprentissage. Ce travail  s’intéresse plus précisément aux différentes utilisations des réseaux sociaux numériques, comme outils  d’apprentissage par les étudiants universitaires dans le cadre de leur formation. \newline
@@ -89,70 +95,103 @@ Les médias sociaux offrent aux universitaires la possibilité de consulter une 
 \subsection{Flexibilité et personnalisation }
 Les médias sociaux offrent aux étudiants la possibilité de personnaliser leur apprentissage en sélectionnant les communautés, les pages ou les individus qu'ils souhaitent suivre. Ils peuvent choisir des contenus qui correspondent à leurs centres d'intérêt particuliers et ajuster leur apprentissage en fonction de leurs besoins personnels.
 \section{Inconvénient des réseaux sociaux }
-Malgré les médias sociaux numériques fournissent de nombreux avantages en tant que dispositifs d'apprentissage, ils peuvent également présenter quelques désavantages pour les étudiants :
+Malgré les médias sociaux numériques fournissent de nombreux avantages en tant que dispositifs d'apprentissage, ils peuvent également présenter quelques désavantages pour les étudiants :\\
+
+
 \subsection{Distraction }
- Les médias sociaux peuvent constituer une source de déconcentration pour les étudiants. La présence permanente des alertes, des conversations et de matériel divertissant peut détourner leur concentration de leurs devoirs d'apprentissage et diminuer leur efficacité. 
+ Les médias sociaux peuvent constituer une source de déconcentration pour les étudiants . Dans l'étude intitulée \citep{siddiqui2016social}, Siddiqui et al. examinent comment la présence permanente des alertes, des conversations et de matériel divertissant peut détourner leur concentration de leurs devoirs d'apprentissage et diminuer leur efficacité. 
+ 
+ 
+ 
  \subsection{Fiabilité des informations }
  Sur les médias sociaux, il peut être compliqué de vérifier la crédibilité et la précision des informations partagées. Les universitaires peuvent être confrontés à des contenus trompeurs, inexactes ou biaisés, ce qui peut nuire à la qualité de leur apprentissage.
+ 
+ 
  \subsection{Confidentialité et protection des données }
  L'usage des médias sociaux peut causer des soucis de confidentialité et de sauvegarde des informations personnelles des étudiants. Il est capital de se rendre compte des réglages de confidentialité et de prendre des initiatives pour garantir sa vie privée sur internet.
 \subsection{Cyberintimidation } 
-Les médias sociaux peuvent être un lieu propice au harcèlement en ligne. Les étudiants peuvent être confrontés à des remarques blessantes, des taquineries ou des attitudes agressives de la part de leurs camarades, ce qui peut avoir des conséquences néfastes sur leur santé mentale et leur motivation.
+Les médias sociaux peuvent être un lieu propice au harcèlement en ligne, comme le souligne l'étude de Fraisse et al.\citep{fraisse2015stop}. Les étudiants peuvent être confrontés à des remarques blessantes, des taquineries ou des attitudes agressives de la part de leurs camarades, ce qui peut avoir des conséquences néfastes sur leur santé mentale et leur motivation.
 \subsection{Surcharge d'informations} 
 Le surplus d'informations accessibles sur les médias sociaux peut être accablant pour les étudiants. Ils risquent de se sentir submergés par une avalanche d'informations et de peiner à trier les contenus appropriés et crédibles.
 \subsection{Perte de temps}
 Passer un excès de temps sur les médias sociaux peut causer une diminution de temps précieux pour les étudiants. Si les étudiants ne parviennent pas à établir une discipline et à gérer leur temps de manière efficace, ils peuvent se retrouver complètement absorbés par des interactions en ligne au détriment de leurs devoirs académiques.
+
+
+
+
 \subsection{Dépendance aux réseaux sociaux}
-Quelques étudiants peuvent devenir accros aux réseaux sociaux, ce qui peut impacter leur focus, leur encouragement et leur bien-être global. Une utilisation démesurée et compulsive des réseaux sociaux peut nuire à leur équilibre personnel et à leur succès académique.
-\section{Quelques exemples concrets des réseaux sociaux dans      l’apprentissage des étudiants}
+Quelques étudiants peuvent devenir accros aux réseaux sociaux, ce qui peut impacter leur focus, leur encouragement et leur bien-être global.Dans leur article \citep{hasnain2015impact}, Hira Hasnain et al., nous présente l'impact des réseaux sociaux dans une usage académique et sur les résultats des étudiants. Une utilisation démesurée et compulsive des réseaux sociaux peut nuire à leur équilibre personnel et à leur succès académique.
+
+
+
+\section{Quelques exemples concrets des réseaux sociaux dans l’apprentissage des étudiants}
  Il faut savoir que les réseaux sociaux jouent un grand rôle dans l’apprentissage des étudiants.
 
-
-\begin{figure}[htp]
-
-    \centering
-
-    \includegraphics[width=15cm]{medias_sociaux.png}
-
-    \caption{Réseaux sociaux}
-
-    \label{fig:galaxy}
-
-\end{figure}
 \subsection{Facebook} 
-En présentant Facebook comme une vaste plateforme d’interactions ,  ce réseau social a été lancé en 2004 en tant que plateforme de médias sociaux et site internet par Mark Zuckerberg et quelques-uns de ses associés pour rester en contact avec leurs camarades, étudiants de l'Université Harvard .Facebook a atteint en 2015, plus d'un milliard d'utilisateurs actifs pour ainsi devenir le réseau social le plus vaste à l'échelle mondiale.Ce réseau social offre aux étudiants plusieurs fonctionnalités qui peuvent enrichir leur apprentissage. Ils peuvent rejoindre des groupes d'étude, partager des ressources, participer à des discussions académiques et se connecter avec d'autres étudiants partageant les mêmes intérêts. Facebook permet aux étudiants d’acquérir des compétences médiatiques, numériques et communicationnelles .De plus, Facebook propose des fonctionnalités telles que les événements et les pages d'universités, ce qui permet aux étudiants de rester informés des activités et des opportunités sur leur campus. Facebook offre également une plateforme conviviale pour interagir avec des enseignants et des professionnels de l'éducation. Cependant, il est important de faire preuve de prudence en matière de confidentialité et de sécurité lors de l'utilisation de Facebook dans un contexte éducatif. Il est également essentiel de s'assurer que l'utilisation de Facebook ne devienne pas une distraction pour les étudiants.
+En présentant Facebook comme une vaste plateforme d’interactions ,  ce réseau social a été lancé en 2004 en tant que plateforme de médias sociaux et site internet par Mark Zuckerberg et quelques-uns de ses associés pour rester en contact avec leurs camarades, étudiants de l'Université Harvard . Facebook a atteint en 2015, plus d'un milliard d'utilisateurs actifs pour ainsi devenir le réseau social le plus vaste à l'échelle mondiale.Ce réseau social offre aux étudiants plusieurs fonctionnalités qui peuvent enrichir leur apprentissage. Ils peuvent rejoindre des groupes d'étude, partager des ressources, participer à des discussions académiques et se connecter avec d'autres étudiants partageant les mêmes intérêts. Facebook permet aux étudiants d’acquérir des compétences médiatiques, numériques et communicationnelles .De plus, Facebook propose des fonctionnalités telles que les événements et les pages d'universités, ce qui permet aux étudiants de rester informés des activités et des opportunités sur leur campus. Les professeurs et les etudiants peuvent utiliser Facebbok dans un but d'apprentissage comme le mentionne Khe Foon Hew dans son article \citep{hew2011students}. Facebook offre également une plateforme conviviale pour interagir avec des enseignants et des professionnels de l'éducation. Cependant, il est important de faire preuve de prudence en matière de confidentialité et de sécurité lors de l'utilisation de Facebook dans un contexte éducatif. Il est également essentiel de s'assurer que l'utilisation de Facebook ne devienne pas une distraction pour les étudiants.
+
 \subsection{Instagram}
+
 Instagram est une plateforme sociale qui a connu une croissance considérable au cours des dernières années, il  offre aux étudiants une perspective visuelle unique dans leur apprentissage. Ils peuvent suivre des comptes éducatifs qui partagent des infographies, des illustrations et des vidéos éducatives. Instagram permet également aux étudiants de partager leur propre travail créatif, comme des projets artistiques ou des présentations visuelles. De plus, Instagram offre une plateforme pour se connecter avec d'autres étudiants et échanger des idées à travers des commentaires et des messages directs. Cela permet aux étudiants d'explorer et de présenter leur apprentissage de manière visuellement attrayante. Ils peuvent également suivre des comptes pertinents dans leur domaine d'étude pour s'inspirer et rester informés. Cependant, il est important de rappeler aux étudiants de maintenir un équilibre entre leur utilisation d'Instagram à des fins éducatives et leur temps consacré aux études. 
+
+
 \subsection{Line}
+
+
 Line est un réseau social populaire en Asie, offrant aux étudiants diverses fonctionnalités pour faciliter leur apprentissage. Il propose des groupes de discussion où les étudiants peuvent échanger des idées, poser des questions et collaborer sur des projets. Line propose également des fonctionnalités de partage de fichiers, ce qui permet aux étudiants de partager des ressources et des documents pertinents. De plus, Line offre des fonctionnalités de messagerie instantanée, ce qui facilite la communication entre les étudiants et leurs camarades de classe ou leurs enseignants. Cela favorise la collaboration et la résolution rapide des problèmes. Line propose des fonctionnalités de calendrier et de rappels, ce qui permet aux étudiants de gérer leur emploi du temps et de rester organisés dans leurs études. De plus, Line offre des options de personnalisation ,comme les stickers et les thèmes, qui peuvent rendre l'apprentissage plus amusant et engageant pour les étudiants.
 \subsection{Messenger }
-Messenger est un réseau social populaire utilisé par de nombreux étudiants pour faciliter leur apprentissage. Les étudiants peuvent créer des groupes de discussion avec leurs camarades de classe pour partager des informations, poser des questions et collaborer sur des projets. Messenger offre aux étudiants une plate-forme de messagerie instantanée, ce qui permet aux étudiants de communiquer facilement avec leurs enseignants pour obtenir de l'aide supplémentaire ou poser des questions.  les étudiants peuvent également partager des fichiers, des liens et même organiser des appels vidéo pour des études de groupe ou des tutorats en ligne. De plus, Messenger propose des fonctionnalités telles que les sondages et les rappels, ce qui peut aider les étudiants à rester organisés et à planifier leurs tâches. Il offre aussi une intégration avec d'autres outils d'apprentissage en ligne, ce qui permet aux étudiants d'accéder facilement à du contenu éducatif et de participer à des discussions académiques. Messenger est donc un outil pratique pour rester connecté et collaborer avec d'autres étudiants, même à distance.
+Messenger est un réseau social populaire utilisé par de nombreux étudiants pour faciliter leur apprentissage. Les étudiants peuvent créer des groupes de discussion avec leurs camarades de classe pour partager des informations, poser des questions et collaborer sur des projets. Messenger offre aux étudiants une plate-forme de messagerie instantanée, ce qui permet aux étudiants de communiquer facilement avec leurs enseignants pour obtenir de l'aide supplémentaire ou poser des questions.  les étudiants peuvent également partager des fichiers, des liens et même organiser des appels vidéo pour des études de groupe ou des tutorats en ligne. De plus, Messenger propose des fonctionnalités telles que les sondages et les rappels, ce qui peut aider les étudiants à rester organisés et à planifier leurs tâches, ainsi les etudiants peuvent aussi etudier a travers les groupes Messenger d'ou Ghimire et Surendra Prasad dans leurs article \citep{ghimire2022secondaire} nous presente cette thematique pour . Il offre aussi une intégration avec d'autres outils d'apprentissage en ligne, ce qui permet aux étudiants d'accéder facilement à du contenu éducatif et de participer à des discussions académiques. Messenger est donc un outil pratique pour rester connecté et collaborer avec d'autres étudiants, même à distance.
 \subsection{WhatsApp}
-Le réseaux social WhatsApp est également utilisé par un nombre non limité d’étudiants pour faciliter leur apprentissage. IL offre aux étudiants une plateforme de messagerie sécurisée et facile à utiliser pour communiquer avec leurs camarades de classe et leurs professeurs. Ils peuvent créer des groupes de discussion, partager des documents et des liens, et organiser des appels vidéo de groupe. De plus, WhatsApp offre des fonctionnalités de messagerie vocale et de partage de localisation, ce qui peut être utile pour les projets de groupe et les rencontres d'étude. Les étudiants peuvent également bénéficier de la fonctionnalité de recherche dans les conversations, ce qui leur permet de retrouver rapidement des informations importantes.
+Le réseaux social WhatsApp est également utilisé par un nombre non limité d’étudiants pour faciliter leur apprentissage. IL offre aux étudiants une plateforme de messagerie sécurisée et facile à utiliser pour communiquer avec leurs camarades de classe et leurs professeurs. Ils peuvent créer des groupes de discussion, partager des documents et des liens, et organiser des appels vidéo de groupe. De plus, WhatsApp offre des fonctionnalités de messagerie vocale et de partage de localisation, ce qui peut être utile pour les projets de groupe et les rencontres d'étude. Les étudiants peuvent également bénéficier de la fonctionnalité de recherche dans les conversations, ce qui leur permet de retrouver rapidement des informations importantes. Ainsi, les  de AK Holo  et Tkoné \citep{holo2022usages} vont montrer que Whatsappp est l'application la plus utilisée et préférée des étudiants.
 \subsection{Telegram}
-Telegram est un autre réseau social qui serve les étudiant dans leur apprentissage. ce réseau social offre aux étudiants une plateforme de messagerie sécurisée et polyvalente pour faciliter leur apprentissage. Les étudiants peuvent créer des groupes de discussion, partager des fichiers de toutes sortes, ce qui est pratique pour échanger des documents  et même créer des chaînes pour diffuser des informations et des ressources pédagogiques. Telegram offre également des fonctionnalités de messagerie vocale, de vidéoconférence et de sondages, ce qui permet aux étudiants de collaborer efficacement et de recueillir des opinions. De plus, Telegram offre une fonction de recherche avancée qui permet aux étudiants de trouver rapidement des informations précédemment partagées. Telegram est donc un outils polyvalent pour la communication et la collaboration entre les étudiants.
+Telegram est un autre réseau social qui serve les étudiant dans leur apprentissage. ce réseau social offre aux étudiants une plateforme de messagerie sécurisée et polyvalente pour faciliter leur apprentissage. Les étudiants peuvent créer des groupes de discussion, partager des fichiers de toutes sortes, ce qui est pratique pour échanger des documents  et même créer des chaînes pour diffuser des informations et des ressources pédagogiques.De plus, les résultats de l'étude ont montré que les participants à l'étude avaient une attitude positive à l'égard de l'utilisation de Telegram Messenger Al Momani dans son article \citep{al2020efficacité}. De nombreuses études ont étudié l'impact de mobiles similaires. Telegram offre également des fonctionnalités de messagerie vocale, de vidéoconférence et de sondages, ce qui permet aux étudiants de collaborer efficacement et de recueillir des opinions. De plus, Telegram offre une fonction de recherche avancée qui permet aux étudiants de trouver rapidement des informations précédemment partagées. Telegram est donc un outils polyvalent pour la communication et la collaboration entre les étudiants.
+
 \subsection{Twitter }
-Twitter peut-être un outil utile pour les étudiants dans apprentissage. Il offre aux étudiants une plateforme de microblogage qui favorise le partage d'informations et la communication concise. Les étudiants peuvent suivre des experts, des chercheurs et des institutions académiques pour rester informés des dernières avancées dans leur domaine d'études. De plus, Twitter permet aux étudiants de participer à des discussions en utilisant des hashtags pertinents, ce qui facilite la recherche de contenu lié à leur sujet d'intérêt. Les étudiants peuvent également utiliser Twitter pour partager leurs propres idées, projets et ressources avec une large audience. Cependant, il est important de rappeler aux étudiants de faire preuve de discernement dans leurs interactions en ligne et de vérifier la crédibilité des sources avant de partager des informations .
+
+Twitter peut-être un outil utile pour les étudiants dans apprentissage. Il offre aux étudiants une plateforme de microblogage qui favorise le partage d'informations et la communication concise. Les étudiants peuvent suivre des experts, des chercheurs et des institutions académiques pour rester informés des dernières avancées dans leur domaine d'études.Des études ont examiné l'intégration de Twitter dans divers cours postsecondaires pour analyser les interactions étudiantes, Junco Elavsky et Heiberger \citep{junco2013putting} dans leurs articles presente les participants qui avaient déjà utilisé Twitter avant l'étude. Les chercheurs ont comparé deux approches d'intégration de Twitter et ont évalué les résultats académiques grâce à des données quantitatives et qualitatives. Des pratiques efficaces d'utilisation pédagogique de Twitter ont également été identifiées.En termes de pratiques et d'implications :Les enseignants doivent structurer l'utilisation de Twitter en fonction de critères pédagogiques, une base théorique solide est nécessaire pour une intégration optimale,
+l'engagement actif des enseignants avec les étudiants sur la plateforme est essentiel pour maximiser les avantages. De plus, Twitter permet aux étudiants de participer à des discussions en utilisant des hashtags pertinents, ce qui facilite la recherche de contenu lié à leur sujet d'intérêt. Les étudiants peuvent également utiliser Twitter pour partager leurs propres idées, projets et ressources avec une large audience. Cependant, il est important de rappeler aux étudiants de faire preuve de discernement dans leurs interactions en ligne et de vérifier la crédibilité des sources avant de partager des informations .
+
+
 \subsection{YouTube}
-YouTube est une plateforme populaire pour l’apprentissage des étudiants. Il offre aux étudiants une vaste bibliothèque de vidéos éducatives et de tutoriels dans divers domaines d'études tels que les sciences, les mathématiques, les langues et bien plus encore. Les étudiants peuvent trouver des vidéos explicatives, des conférences, des démonstrations pratiques et des conseils d'experts pour approfondir leurs connaissances. De plus, YouTube permet aux étudiants de créer leurs propres chaînes pour partager leurs projets, leurs présentations et leurs expériences d'apprentissage. Les fonctionnalités de commentaires et de discussions sur YouTube offrent également aux étudiants la possibilité d'interagir avec d'autres apprenants et d'enrichir leur compréhension des sujets étudiés. Cependant il est important de vérifier la crédibilité des sources et de suivre des chaines éducative réputées.
+Selon des informations relayées par Maziriri et al  dans leur article intitulé \citep{maziriri2020student}, YouTube s'avère être une plateforme de premier choix pour l'apprentissage des étudiants. Elle met à leur disposition une vaste bibliothèque de vidéos éducatives et de tutoriels couvrant une gamme variée de domaines d'études, notamment les sciences, les mathématiques, les langues, et bien plus encore. À travers cette plateforme, les étudiants peuvent accéder à des vidéos explicatives, des conférences, des démonstrations pratiques et des conseils prodigués par des experts, le tout dans le but d'approfondir leurs connaissances. En outre, YouTube offre aux étudiants la possibilité de créer leurs propres chaînes, permettant ainsi de partager leurs projets, présentations et expériences d'apprentissage personnelles. Grâce aux fonctionnalités de commentaires et de discussions présentes sur YouTube, les étudiants peuvent également interagir avec d'autres apprenants, enrichissant ainsi leur compréhension des sujets abordés. Néanmoins, il est crucial de toujours vérifier la crédibilité des sources et de privilégier les chaînes éducatives réputées.
+
+
 \subsection{LinkedIn}
-LinkedIn est un réseau social professionnel qui peut être très utile pour les étudiants dans leur parcours d'apprentissage. Contrairement à d'autres réseaux sociaux plus axés sur les interactions sociales, LinkedIn se concentre sur les connexions professionnelles, l'expérience professionnelle et les opportunités de carrière. Les étudiants peuvent créer un profil LinkedIn pour mettre en valeur leurs compétences, leurs réalisations académiques et leurs expériences de stage. Ils peuvent également rejoindre des groupes liés à leur domaine d'études et interagir avec des professionnels de l'industrie. LinkedIn peut être une plateforme précieuse pour établir des contacts professionnels, trouver des mentors et découvrir des opportunités de stage ou d'emploi , avoir la possibilité de suivre des entreprises et de recevoir des mises à jour sur les offres d'emploi. Cela permet aux étudiants de se préparer à leur future carrière et de rester informés des tendances et des opportunités dans leur domaine d'études.
+LinkedIn, un réseau social professionnel de grande envergure, peut s'avérer extrêmement bénéfique pour les étudiants dans leur parcours d'apprentissage comme l'exprime Emmanuel Mogaji, dans son article\citep{mogaji2019student}. Contrairement à d'autres plateformes davantage axées sur les interactions sociales, LinkedIn se focalise sur les relations professionnelles, l'expérience en milieu professionnel ainsi que les perspectives de carrière. Grâce à la création d'un profil LinkedIn, les étudiants ont l'opportunité de mettre en avant leurs compétences, leurs réalisations académiques et leurs expériences de stage. Ils peuvent également rejoindre des groupes en lien avec leur domaine d'études, leur permettant ainsi d'interagir avec des experts de l'industrie. En établissant des connexions professionnelles, les étudiants peuvent trouver des mentors, explorer des stages et des opportunités d'emploi, et suivre les entreprises pour rester informés des annonces de postes. Cette plateforme se révèle être une ressource inestimable pour préparer leur future carrière et rester au fait des tendances et des opportunités dans leur domaine d'études 
+
+
+
 \subsection{Snapchat}
-Snapchat est un réseau social unique qui peut également être utilisé dans l'apprentissage des étudiants. Il offre des fonctionnalités telles que les Stories, les messages privés et les appels vidéo, ce qui permet aux étudiants de rester connectés et de collaborer avec leurs camarades de classe. De plus, les étudiants peuvent utiliser les filtres, les stickers et les Bitmojis pour rendre leurs contenus plus créatifs, amusant et engageants. Ils peuvent créer des Snaps éducatifs pour présenter des concepts, partager des astuces d'étude ou même réaliser des projets collaboratifs Cependant, il est important de garder à l'esprit que Snapchat est principalement utilisé pour des interactions sociales plutôt que pour des activités d'apprentissage formelles. Il peut être utilisé de manière complémentaire pour partager des informations et des ressources avec d'autres étudiants, mais il est recommandé de se tourner vers des plateformes plus adaptées à l'apprentissage académique pour les besoins plus spécifiques. 
+Snapchat, le réseau social caractérisé par sa singularité, peut également être incorporé dans les stratégies d'apprentissage des étudiants. Alhabash et al. dans leur article intitulé \citep{alhabash2017tale}, ils explorent comment les fonctionnalités telles que les Stories, les messages privés et les appels vidéo offrent aux étudiants l'opportunité de rester connectés et de collaborer aisément avec leurs camarades de classe. De plus, en utilisant les filtres, les stickers et les Bitmojis, ils peuvent ajouter une touche de créativité, d'amusement et d'interaction à leurs contenus. La création de Snaps éducatifs se présente comme une méthode ingénieuse pour présenter des concepts, partager des conseils d'étude ou même réaliser des projets de manière collaborative. Cependant, il convient de garder en tête que Snapchat reste principalement orienté vers les interactions sociales plutôt que vers des activités d'apprentissage formelles. Son utilisation peut être envisagée en complément pour le partage d'informations et de ressources entre étudiants, toutefois, pour des besoins plus spécifiques d'apprentissage académique, il est recommandé de privilégier des plateformes mieux adaptées.
+
+
 \subsection{Pinterest}
-Pinterest est un réseau social visuel qui peut être très utile dans l'apprentissage des étudiants. Contrairement à d'autres réseaux sociaux, Pinterest se concentre sur le partage d'images, de vidéos et d'articles intéressants. Les étudiants peuvent créer des tableaux thématiques pour organiser et épingler des ressources pertinentes à leurs études, telles que des infographies, des tutoriels, des articles de blog et des idées de projets. Cela leur permet de rassembler et de partager des informations de manière visuelle et organisée. Pinterest peut également servir d'inspiration pour les projets créatifs et offrir une plateforme pour découvrir de nouvelles idées et perspectives. C'est un outil polyvalent pour l'apprentissage et l'exploration de différents sujets.
+Pinterest, le réseau social visuel, se révèle être une ressource précieuse dans le processus d'apprentissage des étudiants l'a mentionné Lapolla et Kendra dans leur article \citep{lapolla2014pinterest}. Contrairement à d'autres plateformes sociales, Pinterest se démarque par sa focalisation sur le partage d'images, de vidéos et d'articles captivants. Les étudiants ont la possibilité de créer des tableaux thématiques, constituant ainsi un espace où ils peuvent regrouper et épingler des ressources pertinentes à leurs études, tels que des infographies, des tutoriels, des articles de blog et des idées de projets. Cet agencement leur permet de rassembler et de communiquer des informations de manière visuelle et méthodique. En outre, Pinterest peut également servir d'incitant pour les projets créatifs et fournir une plateforme pour découvrir de nouvelles idées et perspectives stimulantes. Cette plateforme s'avère être un outil polyvalent pour l'apprentissage et l'exploration de divers domaines.
+
 \subsection{Discord}
 Discord est une plateforme de communication en ligne qui peut être très utile dans l'apprentissage des étudiants. Discord se concentre sur la communication en temps réel, permettant aux étudiants de discuter, de collaborer et de partager des informations de manière instantanée. Les étudiants peuvent créer des serveurs dédiés à leurs cours, où ils peuvent échanger des idées, poser des questions et travailler sur des projets ensemble. Discord offre également des fonctionnalités telles que la possibilité de partager des écrans, d'organiser des appels vocaux ou vidéo et de créer des canaux spécifiques pour différents sujets ce qui facilite les discussions et les réunions virtuelles. C'est un outil idéal pour la collaboration et la coordination entre les étudiants, en favorisant l'interaction et l'échange d'idées en temps réel.
+
 \subsection{Tumblr}
 Tumblr est un réseau social axé sur le partage de contenus créatifs tels que des images, des textes et des vidéos. Il offre aux étudiants une plateforme pour exprimer leur créativité, partager des idées et découvrir de nouvelles perspectives, ce qui peut favoriser leur apprentissage et leur développement personnel. Les étudiants peuvent créer des blogs personnalisés où ils peuvent publier des articles, des projets artistiques et des réflexions sur des sujets liés à leurs études. Tumblr permet également de suivre d'autres utilisateurs et d'explorer des communautés et des contenus pertinents. C'est un espace stimulant pour l'apprentissage créatif et l'inspiration.
+
+
 \subsection{Reddit}
 Reddit est une plateforme de discussion en ligne où les étudiants peuvent participer à des communautés (appelées "subreddits") axées sur différents sujets d'apprentissage. C'est un endroit idéal pour poser des questions, partager des ressources et obtenir des conseils d'autres étudiants et experts. Les subreddits peuvent couvrir une large gamme de sujets académiques, offrant ainsi aux étudiants un accès à une grande variété d'informations et de perspectives. De plus, Reddit encourage l'interaction et le partage de connaissances, ce qui en fait une ressource précieuse pour l'apprentissage collaboratif.
+
+
 \subsection{WeChat et Viber}
 WeChat et Viber sont des applications de messagerie instantanée qui peuvent être utilisées pour faciliter la communication et la collaboration entre les étudiants. Ils offrent des fonctionnalités telles que les appels vocaux et vidéo, le partage de fichiers et la création de groupes de discussion, ce qui permet aux étudiants de rester connectés et d'échanger des informations importantes liées à leurs études. Les étudiants peuvent s'entraider, échanger des idées et discuter de projets en temps réel. Cependant, contrairement à d'autres réseaux sociaux, ils sont plus axés sur les interactions privées et la communication individuelle. Ils peuvent être utiles pour des discussions de groupe plus restreintes ou pour des échanges directs entre étudiants et enseignants.
+
+
+
 \subsection{Weibo}
 Weibo est un réseau social chinois similaire à Twitter, où les étudiants peuvent partager des idées, des ressources et interagir avec d'autres utilisateurs. Il offre une plateforme pour discuter de sujets d'apprentissage, poser des questions et obtenir des réponses de la communauté. Weibo permet également de suivre des comptes d'experts et d'institutions éducatives, ce qui peut être bénéfique pour l'apprentissage continu. les étudiants peuvent rester informés des dernières actualités et interagir avec une communauté en ligne. Cela peut enrichir leur apprentissage et leur permettre d'explorer de nouveaux sujets. Cependant, il est important de noter que Weibo est principalement utilisé en Chine et que son contenu est principalement en mandarin.
-\section{Conclusion }
+
+\newpage
+\section*{Conclusion }
 En conclusion, mon projet sur l'utilisation des réseaux sociaux numériques comme outils d'apprentissage pour les étudiants démontre que ces plateformes peuvent être des ressources précieuses pour favoriser l'engagement, la collaboration et l'accès à des ressources éducatives. Les réseaux sociaux offrent un espace interactif où les étudiants peuvent échanger des idées, poser des questions et obtenir des réponses de la communauté. Cependant, il est important de souligner que l'utilisation responsable et éthique de ces plateformes est essentielle pour éviter les problèmes tels que le plagiat. En intégrant les réseaux sociaux numériques de manière appropriée dans les pratiques pédagogiques, les étudiants peuvent bénéficier d'une expérience d'apprentissage enrichissante et collaborative. 
 
-
+\newpage
+\bibliographystyle{plain}
+\bibliography{bibli}
 \end{document}
